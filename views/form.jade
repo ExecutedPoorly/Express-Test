@@ -1,0 +1,19 @@
+extends layout
+
+//- <form method="POST" action="/new">
+//- <h1>I AM A HEADING</H1>
+//- <label for="name">Name:</label>
+//- <input id="name"/>
+//- <label for="message">Mesage:</label>
+//- <input id="message"/>
+//- </form>
+
+
+block content
+  form(method="POST" action="/new")
+    h1 I AM A HEADING
+    label(for="name") Name:
+    input(type="text" id="name" name="name")
+    label(for="message") Message:
+    input(type="text" id="message" name="message")
+    input(type="submit" value="Submit")

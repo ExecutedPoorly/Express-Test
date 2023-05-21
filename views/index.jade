@@ -1,0 +1,14 @@
+extends layout
+
+
+//- {for (let i=0; i < messages.length; i++) {
+
+//- }}
+
+block content
+  each message in messages
+      h1= `${message.text} - ${message.user}`
+      p= `Added: ${message.added}`
+
+  a(href="/new")
+    button New Message
